@@ -771,11 +771,7 @@
 	</footer>
 	<section class="section-copyright">
 		<p class="text-muted text-center p-1 m-0">
-			Copyright &copy; Lcz - 
-			<script>
-				var year = new Date().getFullYear();
-				document.getElementById('year').innerHTML = year;
-		      	</script>. Todos los derechos reservados del autor.
+			Copyright &copy; Lcz - <span id="year"></span>. Todos los derechos reservados del autor.
 		</p>
 	</section>
 
@@ -783,6 +779,11 @@
 	<script src="./js/lib/jquery-3.4.1.min.js"></script>
 	<script src="./js/lib/popper.min.js"></script>
 	<script src="./js/lib/bootstrap.min.js"></script>
+	
+	<script>
+		var year = new Date().getFullYear();
+		document.getElementById('year').innerHTML = year;
+	</script>
 
 	<script>
 		$(document).ready(function(){
